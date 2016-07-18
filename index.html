@@ -1,16 +1,21 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Keywords" content="U-SAG, plastic extrusion, plastic, extrusion, u-sag international, mould design">
+    <meta name="Description" content="Plastic extrusion manufacturer">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/mainStyle.css">
     <title>U-SAG - Main</title>
 </head>
 
 <body>
-    <header>LOGO
+    <header class="mainHeader">
         <nav>
             <ul>
+                <li><img src="images/logo.gif"></li>
                 <li><a href="index.html">Main</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -18,22 +23,20 @@
             </ul>
         </nav>
     </header>
-    <div>
+    <div class="mainContent">
         <h1>Plastic Extrusion</h1>
-        <h3>It's all about quality of plastic extrusion product.</h3> We provide the product with a quality that no other. With over 15 years of experiences in mould designer from Prezier Co. Ltd. There is no ANY FORM of extrusion that we cannot do! Building a long term relationship with our clients, have have many clients who have been using our service for years
+        <h3 class="subtitle">It's all about quality of plastic extrusion product.</h3> We provide the product with a quality that no other. With over 15 years of experiences in mould designer from Prezier Co. Ltd. There is no ANY FORM of extrusion that we cannot do! Building a long term relationship with our clients, have have many clients who have been using our service for years</h3>
+        All modern browsers support the XMLHttpRequest object. You can use this object to create a connection to any server and request resources from it. In this case, the application is using the XMLHttpRequest to request the Customers.XML file, but you can use it for any resource. To request data, you must first define the information you need. In this case, the code uses the open() function to specify that it wants to use the GET method of obtaining the data, that the data is located in Customers.XML, and that it wants to make a synchronous request. A synchronous request is one in which the browser waits for the data and processes it immediately. You can also create asynchronous requests by using a callback function. The code also sets the request header to the kind of data that the application is requesting. The send() function sends the information to the server. On return from the send() function call, the responseXML property contains an XML document. There are other response properties you use for data of other types. For example, if you requested a text file, you use the responseText property instead. The XML document contains the root node, Customers, at element 0. It places this data in Customers. The Customers.children property contains two Customer child nodes — one for each customer in the file. A for loop processes each of these Customer nodes. Because each Customer child node has a unique name, you can use the getElementsByTagName() function to retrieve the data they contain. The resulting variables — Name, Age, and Color — are then used to add data to the table on the page. Notice that you must use the textContent property and then convert this property to a string by calling toString(). Otherwise, the table will display an object name, rather than the actual data.
     </div>
-    <div>
+    <div class="clientContent">
         <h2>Our clients</h2> We are a medium scale manfracturer for the all scales customers.
         <ul>
             <li>Carryboy</li>
         </ul>
     </div>
-    <p>
-        <h3>Contact</h3>
-        <div class="contact">
-        Interested to discuss more about the product that our company can provide? Let's have a quick call
-        </div>
-    </p>
+    <div class="contactContent">
+        <h3>Contact</h3> Interested to discuss more about the product that our company can provide? Let's have a quick call
+    </div>
 
     <footer>Copyright &copy; 2016 U-SAG International Ltd., Part Reserved all rights</footer>
 </body>
