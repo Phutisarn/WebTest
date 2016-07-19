@@ -2,170 +2,205 @@ body {
     margin: 0;
     background-color: beige;
     color: blueviolet;
-    font-size: 85%; /* Base font size is 14px */
+    font-size: 85%;
+    /* Base font size is 14px */
     font-family: Arial, 'Lucida Sans Unicode';
     line-height: 1.5;
     text-align: left;
 }
-
 a {
     text-decoration: none;
 }
-
-a:link, a:visited {
-    
-}
-
-a:hover, a:active {
-    
-}
-
+a:link,
+a:visited {}
+a:hover,
+a:active {}
 ul li {
     list-style-type: none;
 }
-
 header {
     /* background-color: #333; */
-    position: fixed;
 }
-
-footer {
-    width: 100%;
-    float: left;
-    background-color: #666;
-    color: #FFF;
-    text-align: center;
-    font-size: 80%;
-    padding: 2% 3%;
-    margin: 0;
+h1 {
+    text-transform: uppercase;
 }
-
-.mainHeader {
-    margin: 0;
-    padding: 0;
+h2 {
+    text-transform: uppercase;
 }
-
+h3 {
+    text-transform: uppercase;
+}
+.mainHeader {}
 .mainHeader img {
     width: auto;
     height: 40px;
-    padding: 0 40px 0 0;
+    padding: 0 80px 0 0;
 }
-
 .mainHeader nav {
-    width: auto;
+    width: 100%;
     height: 40px;
+    top: 0;
+    left: 0;
+    position: fixed;
     background-color: #666;
-    text-align: center;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
 }
-
 .mainHeader nav ul {
     list-style-type: none;
+    /*display: inline-block*/
     overflow: hidden;
+    width: 80%;
+    margin: 0 10%;
 }
+
+/*
+.mainHeader nav ul:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+*/
 
 .mainHeader nav ul li {
     float: left;
     display: inline;
+    text-align: center;
 }
-
-.mainHeader nav a:link, .mainHeader nav a:visited {
+.mainHeader nav a {
     display: inline-block;
-    color: #FFF;
     padding: 10px 25px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    color: #FFF;
+}
+.mainHeader nav a:link,
+.mainHeader nav a:visited {}
+.mainHeader nav a:hover:not(.active),
+.mainHeader nav a:active {
+    background-color: #111;
+    /*text-shadow: none;*/
+}
+.mainHeader nav .active {
+    background-color: #4CAF50;
 }
 
-.mainHeader nav a:hover, .mainHeader nav a:active {
-    background-color: #CF5C3F;
-    text-shadow: none;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+/*
+.mainHeader nav .rightNav {
+    float: right;
 }
+*/
 
 .mainContent {
-    background-color: white;
-    width: 80%;
+    width: 76%;
+    margin: 60px 10% 10px 10%;
+    padding: 1px 2% 5px 2%;
     float: none;
+    background-color: white;
     line-height: 25px;
-    margin: auto;
     clear: both;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
-
 .subtitle {
     font-style: italic;
     color: #999;
     font-size: 90%;
 }
-
 .clientContent {
+    width: 37%;
+    margin: 10px 1% 10px 10%;
+    padding: 0px 1% 5px 1%;
     background-color: white;
-    width: 80%;
-    margin: 10px auto;
-    padding: 5px 5px;
+    float: left;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
-
 .contactContent {
-    text-align: center;
+    width: 37%;
+    margin: 10px 10% 10px 1%;
+    padding: 0px 1% 5px 1%;
+    float: left;
+    background-color: white;
     color: chocolate;
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
 }
-
-@media only screen and (min-width: 150px) and (max-width: 640px)
-{
-
-.mainHeader img {
-    width: auto;
-    height: 80px;
-}
-
-.mainHeader nav {
-    height: 280px;
-}
-
-.mainHeader nav ul {
-    
-}
-
-.mainHeader nav ul li {
+.mainFooter {
     width: 100%;
+    padding: 12px 0px;
+    overflow: hidden;
+    background-color: #666;
+    color: #FFF;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 80%;
 }
 
-.mainHeader nav a:link, .mainHeader nav a:visited {
-    display: block;
-}
+/* For mobile screen */
 
-.mainHeader nav a:hover, .mainHeader nav a:active {
-    display: block;
-}
-
-.mainContent {
-    width: 100%;
-    padding: 0px 10px;
-}
-    
-.subtitle {
-    display: none;
-}
-    
-.clientContent {
-    width: 100%;
-    padding: 0px 10px;
-}
-
+@media only screen and (min-width: 150px) and (max-width: 640px) {
+    .mainHeader img {
+        width: auto;
+        height: 80px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .mainHeader nav {
+        width: 100%;
+        height: 280px;
+    }
+    .mainHeader nav ul {
+        width: 100%;
+        margin: 0;
+    }
+    .mainHeader nav ul li {
+        text-align: center;
+        font-size: 1.5em;
+        float: none;
+    }
+    .mainHeader nav a {
+        display: block;
+        margin: 0;
+    }
+    .mainHeader nav a:link,
+    .mainHeader nav a:visited {
+        
+    }
+    .mainHeader nav a:hover,
+    .mainHeader nav a:active {
+        
+    }
+    .mainContent {
+        width: 94%;
+        padding: 320px 2%;
+        margin: 10px 1%;
+        text-align: justify;
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+    }
+    .subtitle {
+        display: none;
+    }
+    .clientContent {
+        width: 94%;
+        padding: 0px 2%;
+        margin: 10px 1%;
+        text-align: center;
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+    }
+    .contactContent {
+        width: 94%;
+        padding: 0px 2%;
+        margin: 10px 1%;
+        text-align: center;
+        border-radius: 0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
+        box-shadow: 2px;
+    }
+    .mainFooter {
+        font-size: 90%;
+    }
 }
