@@ -203,6 +203,7 @@ h3 {
     .mainHeader nav a:active {
         
     }
+    .mainHeader nav ul li .desktop {
         display: none;
     }
     .mainHeader nav ul li .mobile {
