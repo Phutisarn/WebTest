@@ -54,7 +54,6 @@ h3 {
 }
 .mainHeader nav ul {
     list-style-type: none;
-    /*display: inline-block*/
     overflow: hidden;
     width: 75%;
     margin: 0px 10% 0px;
@@ -155,9 +154,22 @@ h3 {
     font-size: 80%;
 }
 
+/* For smaller PC screen */
+@media only screen and (min-width: 660px) and (max-width: 940px) {
+
+    
+    .mainHeader nav ul li .desktop {
+        display: none;  
+    }
+    .mainHeader nav ul li .mobile {
+        display: block;
+    }
+    
+}
+
 /* For mobile screen */
 
-@media only screen and (min-width: 150px) and (max-width: 640px) {
+@media only screen and (min-width: 150px) and (max-width: 659px) {
     .spaceForHeader {
         width: 100%;
         float: left;
