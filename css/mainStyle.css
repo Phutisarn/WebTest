@@ -51,6 +51,7 @@ h3 {
     top: 0;
     position: fixed;
     background-color: #22264b;
+    text-align: center;
 }
 .mainHeader nav ul {
     list-style-type: none;
